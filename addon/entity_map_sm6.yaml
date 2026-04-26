@@ -1,0 +1,75 @@
+# Map each logical SunSpec value to a Home Assistant entity_id.
+# unit_multiplier is applied before encoding into the SunSpec register.
+
+current_l1:
+  entity_id: sensor.meter6_current_l1
+  unit_multiplier: 1.0
+current_l2:
+  entity_id: sensor.meter6_current_l2
+  unit_multiplier: 1.0
+current_l3:
+  entity_id: sensor.meter6_current_l3
+  unit_multiplier: 1.0
+voltage_l1_n:
+  entity_id: sensor.meter6_voltage_l1_n
+  unit_multiplier: 1.0
+voltage_l2_n:
+  entity_id: sensor.meter6_voltage_l2_n
+  unit_multiplier: 1.0
+voltage_l3_n:
+  entity_id: sensor.meter6_voltage_l3_n
+  unit_multiplier: 1.0
+frequency:
+  entity_id: sensor.meter6_frequency
+  unit_multiplier: 1.0
+power_l1:
+  entity_id: sensor.meter6_power_l1
+  unit_multiplier: 1.0
+power_l2:
+  entity_id: sensor.meter6_power_l2
+  unit_multiplier: 1.0
+power_l3:
+  entity_id: sensor.meter6_power_l3
+  unit_multiplier: 1.0
+power_total:
+  entity_id: sensor.meter6_power_total
+  unit_multiplier: 1.0
+energy_export_total:
+  entity_id: sensor.meter6_energy_export_total
+  unit_multiplier: 1000.0
+energy_import_total:
+  entity_id: sensor.meter6_energy_import_total
+  unit_multiplier: 1000.0
+apparent_l1:
+  entity_id: sensor.meter6_apparent_l1
+  unit_multiplier: 1.0
+apparent_l2:
+  entity_id: sensor.meter6_apparent_l2
+  unit_multiplier: 1.0
+apparent_l3:
+  entity_id: sensor.meter6_apparent_l3
+  unit_multiplier: 1.0
+apparent_total:
+  entity_id: sensor.meter6_apparent_total
+  unit_multiplier: 1.0
+reactive_l1:
+  entity_id: sensor.meter6_reactive_l1
+  unit_multiplier: 1.0
+reactive_l2:
+  entity_id: sensor.meter6_reactive_l2
+  unit_multiplier: 1.0
+reactive_l3:
+  entity_id: sensor.meter6_reactive_l3
+  unit_multiplier: 1.0
+pf_total:
+  entity_id: sensor.meter6_pf_total
+  unit_multiplier: 1.0
+pf_l1:
+  entity_id: sensor.meter6_pf_l1
+  unit_multiplier: 1.0
+pf_l2:
+  entity_id: sensor.meter6_pf_l2
+  unit_multiplier: 1.0
+pf_l3:
+  entity_id: sensor.meter6_pf_l3
+  unit_multiplier: 1.0

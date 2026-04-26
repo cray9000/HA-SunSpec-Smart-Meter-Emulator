@@ -1,0 +1,13 @@
+configuration:
+  status_port:
+    name: Status port
+    description: TCP port used for the status API and ingress UI backend.
+  log_level:
+    name: Log level
+    description: Application log verbosity.
+  meters_file:
+    name: Meters file
+    description: Name of the meters configuration file stored in /data.
+  config_reload_interval_s:
+    name: Config reload interval
+    description: Interval in seconds for checking meters.yaml and entity maps for changes.

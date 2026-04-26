@@ -1,0 +1,35 @@
+name: "HA SunSpec Smart Meter Emulator"
+version: "0.3.1"
+slug: "ha_sunspec_smart_meter_emulator"
+description: >-
+  Exposes multiple Home Assistant sensor sets as SunSpec-compatible Modbus TCP smart meters on fixed ports.
+url: "https://github.com/cray9000/HA-SunSpec-Smart-Meter-Emulator"
+arch:
+  - amd64
+  - aarch64
+startup: services
+boot: auto
+init: false
+homeassistant_api: true
+ingress: true
+ingress_port: 8080
+ports:
+  502/tcp: 502
+  1502/tcp: 1502
+  2502/tcp: 2502
+  3502/tcp: 3502
+  4502/tcp: 4502
+  5502/tcp: 5502
+  8080/tcp: 8080
+map:
+  - addon_config:rw
+options:
+  status_port: 8080
+  log_level: "INFO"
+  meters_file: "meters.yaml"
+  config_reload_interval_s: 3
+schema:
+  status_port: port
+  log_level: list(DEBUG|INFO|WARNING|ERROR)
+  meters_file: str
+  config_reload_interval_s: int(1,60)

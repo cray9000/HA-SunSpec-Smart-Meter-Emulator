@@ -1,0 +1,6 @@
+build_from:
+  aarch64: ghcr.io/home-assistant/aarch64-base:3.21
+  amd64: ghcr.io/home-assistant/amd64-base:3.21
+labels:
+  org.opencontainers.image.title: "HA SunSpec Smart Meter Emulator"
+  org.opencontainers.image.description: "Expose Home Assistant sensor states as up to 6 SunSpec-compatible Modbus TCP smart meters"

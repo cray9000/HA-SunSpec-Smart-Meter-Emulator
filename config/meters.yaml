@@ -1,0 +1,64 @@
+defaults:
+  modbus_host: 0.0.0.0
+  modbus_enable_proxy: true
+  modbus_gate_enable: true
+  modbus_log_reads: true
+  alias_unit_ids: [1]
+  device_manufacturer: Fronius
+  device_model: Smart Meter 63A
+  device_version: "3.0.1-0002"
+
+meters:
+  - id: sm1
+    enabled: true
+    port: 502
+    unit_id: 3
+    device_modbus_address: 241
+    device_name: "meter1"
+    device_serial: "00000002"
+    entity_map_path: entity_map_sm1.yaml
+
+  - id: sm2
+    enabled: false
+    port: 1502
+    unit_id: 3
+    device_modbus_address: 242
+    device_name: "meter2"
+    device_serial: "00000003"
+    entity_map_path: entity_map_sm2.yaml
+
+  - id: sm3
+    enabled: false
+    port: 2502
+    unit_id: 3
+    device_modbus_address: 243
+    device_name: "meter3"
+    device_serial: "00000004"
+    entity_map_path: entity_map_sm3.yaml
+
+  - id: sm4
+    enabled: false
+    port: 3502
+    unit_id: 3
+    device_modbus_address: 244
+    device_name: "meter4"
+    device_serial: "00000005"
+    entity_map_path: entity_map_sm4.yaml
+
+  - id: sm5
+    enabled: false
+    port: 4502
+    unit_id: 3
+    device_modbus_address: 245
+    device_name: "meter5"
+    device_serial: "00000006"
+    entity_map_path: entity_map_sm5.yaml
+
+  - id: sm6
+    enabled: false
+    port: 5502
+    unit_id: 3
+    device_modbus_address: 246
+    device_name: "meter6"
+    device_serial: "00000007"
+    entity_map_path: entity_map_sm6.yaml
